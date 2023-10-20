@@ -83,11 +83,11 @@ export const Projects: Project[] = [
         description: "This is my first portfolio.I created this using react",
         img: portfolio,
         githubLink: "https://github.com/salub-xd",
-        siteLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0L5vVfHh5dAPxAfkiq9jxUjXQwEzFxbAHqKbdzPuVs7erTl81VuxLhQg3NAPzBgoZdP4&usqp=CAU"
+        siteLink: "https://Salub.netlify.app"
     },
     {
         name: 'Reddit Clone',
-        description: "I made this project for practice using mern-stack",
+        description: "I made this project for practice using MERN (MongoDB, Express.js, React, Node.js) stack.",
         img: redditClone,
         githubLink: "https://github.com/salub-xd/reddit-clone",
     },

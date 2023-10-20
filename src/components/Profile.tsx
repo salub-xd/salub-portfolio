@@ -4,6 +4,7 @@ import dcMoonImg from "../assets/editedDcMoonIcon.png";
 import dcDndImg from "../assets/discordDnd.png";
 import dcOfflineImg from "../assets/dcOfflineImg.png";
 import dcOnline from "../assets/dcOnline.png";
+import statusImg from "../assets/newStatus.png";
 
 // interface T {
 //     Array:Object
@@ -58,12 +59,13 @@ const Profile: React.FC = () => {
     return (
         <div id="home" className="mx-5 pt-28 flex flex-col-reverse justify-between items-center sm:mx-20 md:mx-32 lg:flex-row lg:pt-40 ">
             <div className="profile pb-0 py-16 lg:py-5">
-                <h1 className="text-3xl text-white text-center capitalize sm:text-left sm:text-5xl">hello i'm Salub</h1>
-                <p className="text-white px-0.5 text-center text-xl sm:text-left sm:text-3xl" aria-label="I'm a developer">
+                <h1 className="text-3xl text-white text-center font-Ubuntu capitalize sm:text-left sm:text-5xl">hello i'm Salub</h1>
+                {/* <small className=" absolute top-62 left-30 text-5xl text-yellow-500 font-Alumni">Air</small> */}
+                <p className="text-white px-0.5 text-center font-Roboto text-xl sm:text-left sm:text-3xl" aria-label="I'm a developer">
                     I'm a&nbsp;<span className="typewriter text-xl text-sky-600 sm:text-3xl"></span>
                 </p>
                 {!loading && (
-                    <div className="flex items-center text-white my-10 bg-[#24242b] rounded-lg p-2 text-xl sm:items-start lg:text-3xl">
+                    <div className="flex items-center font-Ubuntu text-white my-10 bg-[#24242b] rounded-lg p-2 text-xl sm:items-start lg:text-3xl">
                         <img className="w-20 rounded-full sm:w-28 md:w-28 lg:w-32"
                             src={`https://cdn.discordapp.com/avatars/${data?.discord_user.id}/${data?.discord_user.avatar}.png`}
                             alt="" />
@@ -113,8 +115,8 @@ const Profile: React.FC = () => {
                                 data?.activities?.map((val, i) => (
                                     <>
                                         {/* {console.log(val)}  */}
-                                        {/* {i === 0 && <div className='flex'> <p key={(val as { state: string }).state} className=' items-center text-gray-200 p-0.5 pl-4 text-xl'>{(val as { state: string }).state} </p>
-                                    <img className=' w-6 pt-2 to-white' src={statusImg} alt="" /> </div>} */}
+                                        {/* {i === 0 && <div className='flex'> <p key={(val as { state: string }).state} className=' text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl'>{(val as { state: string }).state} </p>
+                                            <img className=' w-6 pt-2 to-white' src={statusImg} alt="" /> </div>} */}
                                         {i === 1 && (
                                             <p
                                                 key={(val as { name: string }).name}

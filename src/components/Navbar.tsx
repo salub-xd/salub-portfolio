@@ -32,14 +32,14 @@ const Navbar: React.FC = () => {
         <>
             <div className={bgClass ? `bg-[#1e1e1e30] w-full flex fixed flex-col z-10 py-3 px-6 h-20 backdrop-blur-md sm:px-12 sm:py-0 ` : `w-full flex fixed flex-col z-10 py-3 px-6 h-20 backdrop-blur-md sm:px-12 sm:py-0`}>
                 <div className="flex justify-between items-center ">
-                    <div className=" font-bold mx-6 font-serif text-white text-4xl border-b-4 border-sky-800 ">
+                    <div className=" font-bold mx-6 font-Alumni text-white text-4xl border-b-4 border-sky-800 ">
                         Salub
                     </div>
                     <ul className="hidden sm:flex ">
-                        <a className="p-6 text-lg text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#home">Home</a>
-                        <a className="p-6 text-lg text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#skill">Skills</a>
-                        <a className="p-6 text-lg text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#project">Projects</a>
-                        <a className="p-6 text-lg text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#contact">Contact</a>
+                        <a className="p-6 text-lg font-Roboto text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#home">Home</a>
+                        <a className="p-6 text-lg font-Roboto text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#skill">Skills</a>
+                        <a className="p-6 text-lg font-Roboto text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#project">Projects</a>
+                        <a className="p-6 text-lg font-Roboto text-white hover:text-sky-600 hover:transition-all hover:duration-300 hover:ease-in-out" href="#contact">Contact</a>
                     </ul>
                     <div
                         onClick={handleClick}

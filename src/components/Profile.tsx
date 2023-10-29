@@ -49,12 +49,11 @@ const Profile: React.FC = () => {
                 setData(res.data);
                 setLoading(false);
                 // console.log(res);
-                // console.log(res.data);
-                console.log(data);
+                console.log(res.data);
+                // console.log(data);
             });
         // eslint-disable-next-line
     }, []);
-    // console.log(data);
 
     return (
         <div id="home" className="mx-5 pt-28 flex flex-col-reverse justify-between items-center sm:mx-20 md:mx-32 lg:flex-row lg:pt-40 ">
@@ -105,14 +104,16 @@ const Profile: React.FC = () => {
                             <h2 className="text-white text-lg font-mono md:text-xl xl:text-2xl">
                                 @{data?.discord_user.username}
                             </h2>
+                            { Array.isArray(data?.activities) && data?.activities.length === 0 && ( <p className="text-gray-300 my-3 text-sm font-mono md:my-5 md:text-xl">{currTime && currDate && currDate + ", " + currTime}</p>)}
                             {data?.discord_status === "offline" ? (<>
                                 <p className=" text-gray-300 pt-0.5 text-md font-mono md:pt-2 md:text-xl">
                                     offline
                                 </p>
                                 <p className=" text-gray-300 text-sm font-mono md:text-xl">{currTime && currDate && currDate + ", " + currTime}</p>
+                               
                             </>
-                            ) : (
-                                data?.activities?.map((val, i) => (
+                            ) :  (
+                                data?.activities && data?.activities?.map((val, i) => (
                                     <>
                                         {/* {console.log(val)}  */}
                                         {/* {i === 0 && <div className='flex'> <p key={(val as { state: string }).state} className=' text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl'>{(val as { state: string }).state} </p>
@@ -142,7 +143,7 @@ const Profile: React.FC = () => {
                                             </p>
                                         )}
                                     </>
-                                ))
+                                )) 
                             )}
                         </div>
                     </div>

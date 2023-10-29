@@ -82,7 +82,7 @@ export const Projects: Project[] = [
         name: 'Portfolio',
         description: "This is my first portfolio.I created this using react",
         img: portfolio,
-        githubLink: "https://github.com/salub-xd",
+        githubLink: "https://github.com/salub-xd/salub-portfolio",
         siteLink: "https://Salub.netlify.app"
     },
     {
@@ -96,6 +96,5 @@ export const Projects: Project[] = [
         description: "I created a note-taking app using React, and it marked my first project in the MERN (MongoDB, Express.js, React, Node.js) stack.",
         img: reactNote,
         githubLink: "https://github.com/salub-xd/react-note-app",
-
     },
 ];

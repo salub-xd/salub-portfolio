@@ -12,7 +12,7 @@ const ProjectCards: React.FC = () => {
             <img className='rounded-md w-52 h-32 sm:w-64 sm:h-52 md:w-80 md:h-64' src={val.img} alt="" />
           </div>
           <div className='text-white w-52 h-30 py-3 sm:w-64 sm:h-32 md:w-80 md:h-38'>
-            <div className='flex flex-wrap sm:flex-row sm:justify-between'>
+            <div className='flex flex-wrap justify-between sm:flex-row'>
               <big className='text-xl font-bold font-Roboto md:text-2xl'>{val.name}</big>
               <div className='flex justify-end items-center sm:py-0'>
                 {val.githubLink &&

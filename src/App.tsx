@@ -16,7 +16,7 @@ function App() {
     <>
       <div className={changeColor ? 'h-auto bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]' : 'bg-slate-800  h-auto'}>
         <p onClick={(() => { setChangeColor(!changeColor) })} className="z-50 absolute right-12 top-16 rounded-full md:fixed md:right-14 md:top-24 ">
-          <img className="rounded-full text-white fill-white bg-white w-8 md:w-12" src="https://www.svgrepo.com/show/361086/color-mode.svg" alt="" /></p>
+          <img className="rounded-full text-white fill-white bg-white w-8 md:w-10" src="https://www.svgrepo.com/show/361086/color-mode.svg" alt="" /></p>
         <Navbar />
         <Profile />
         <Hr title="Skills" _id="skill" />

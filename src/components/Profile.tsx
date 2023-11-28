@@ -4,11 +4,6 @@ import dcMoonImg from "../assets/editedDcMoonIcon.png";
 import dcDndImg from "../assets/discordDnd.png";
 import dcOfflineImg from "../assets/dcOfflineImg.png";
 import dcOnline from "../assets/dcOnline.png";
-import statusImg from "../assets/newStatus.png";
-
-// interface T {
-//     Array:Object
-// }
 
 interface Resp {
     discord_status: "online" | "dnd" | "idle" | "offline";
@@ -48,9 +43,7 @@ const Profile: React.FC = () => {
             .then((res) => {
                 setData(res.data);
                 setLoading(false);
-                // console.log(res);
-                console.log(res.data);
-                // console.log(data);
+                // console.log(res.data);
             });
         // eslint-disable-next-line
     }, []);
@@ -59,7 +52,6 @@ const Profile: React.FC = () => {
         <div id="home" className="mx-5 pt-28 flex flex-col-reverse justify-between items-center sm:mx-20 md:mx-32 lg:flex-row lg:pt-40 ">
             <div className="profile pb-0 py-16 lg:py-5">
                 <h1 className="text-3xl text-white text-center font-Ubuntu capitalize sm:text-left sm:text-5xl">hello i'm Salub</h1>
-                {/* <small className=" absolute top-62 left-30 text-5xl text-yellow-500 font-Alumni">Air</small> */}
                 <p className="text-white px-0.5 text-center font-Roboto text-xl sm:text-left sm:text-3xl" aria-label="I'm a developer">
                     I'm a&nbsp;<span className="typewriter text-xl text-sky-600 sm:text-3xl"></span>
                 </p>
@@ -104,20 +96,16 @@ const Profile: React.FC = () => {
                             <h2 className="text-white text-lg font-mono md:text-xl xl:text-2xl">
                                 @{data?.discord_user.username}
                             </h2>
-                            { Array.isArray(data?.activities) && data?.activities.length === 0 && ( <p className="text-gray-300 my-3 text-sm font-mono md:my-5 md:text-xl">{currTime && currDate && currDate + ", " + currTime}</p>)}
                             {data?.discord_status === "offline" ? (<>
                                 <p className=" text-gray-300 pt-0.5 text-md font-mono md:pt-2 md:text-xl">
                                     offline
                                 </p>
                                 <p className=" text-gray-300 text-sm font-mono md:text-xl">{currTime && currDate && currDate + ", " + currTime}</p>
-                               
+
                             </>
-                            ) :  (
+                            ) : (
                                 data?.activities && data?.activities?.map((val, i) => (
                                     <>
-                                        {/* {console.log(val)}  */}
-                                        {/* {i === 0 && <div className='flex'> <p key={(val as { state: string }).state} className=' text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl'>{(val as { state: string }).state} </p>
-                                            <img className=' w-6 pt-2 to-white' src={statusImg} alt="" /> </div>} */}
                                         {i === 1 && (
                                             <p
                                                 key={(val as { name: string }).name}
@@ -143,7 +131,7 @@ const Profile: React.FC = () => {
                                             </p>
                                         )}
                                     </>
-                                )) 
+                                ))
                             )}
                         </div>
                     </div>
@@ -151,7 +139,7 @@ const Profile: React.FC = () => {
             </div>
             <div className="">
                 <img
-                    className="w-64 rounded-xl hover:translate-x-2 hover:translate-y-2 delay-100 transition-all duration-500 md:w-72 xl:w-80 "
+                    className="w-64 rounded-xl hover:translate-x-3 hover:translate-y-2 delay-100 transition-all duration-500 md:w-72 xl:w-80 "
                     src={batImg}
                     alt=""
                 />
@@ -161,4 +149,3 @@ const Profile: React.FC = () => {
 };
 
 export default Profile;
-// style={"transform: perspective(500px) rotateX(0deg) rotateY(0deg); transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s"}

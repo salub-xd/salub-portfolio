@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hr from "./components/Hr";
@@ -7,13 +6,11 @@ import SkillCards from "./components/SkillCards";
 import ProjectCards from "./components/ProjectCards";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import CustomCursor from "./components/CustomCursor";
 
 function App() {
 
   return (
     <>
-      {/* <div className="text-center text-yellow-500 text-xl ">Hello</div> */}
       <div className="bg-slate-800 h-auto">
         <Navbar />
         <Profile />

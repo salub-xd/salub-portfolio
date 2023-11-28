@@ -1,5 +1,4 @@
-import React, { useState, createRef, useEffect, useRef } from "react";
-// import "./navbar.css"
+import React, { useState, useEffect } from "react";
 
 const Navbar: React.FC = () => {
     const [dropdownMenu, setDropdownMenu] = useState<Boolean>(false);

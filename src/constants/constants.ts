@@ -72,6 +72,10 @@ export const Skills: Skill[] = [
         name: 'Nodejs',
         img: nodejs
     },
+    {
+        name: 'Nextjs',
+        img: 'https://www.svgrepo.com/show/354113/nextjs-icon.svg'
+    },
 
 ];
 

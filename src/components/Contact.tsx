@@ -3,7 +3,7 @@ import React from 'react'
 const Contact: React.FC = () => {
     return (
         <div className='mx-15 flex flex-wrap justify-around items-center sm:mx-20 md:mx-32'>
-            <div className='flex items-center'>
+            <div className='flex items-center  flex-wrap'>
                 <section className="flex justify-center items-center">
                     <a href="https://github.com/salub-xd"  target='_blank' rel="noreferrer">
                         <button
@@ -26,14 +26,14 @@ const Contact: React.FC = () => {
                             <span
                                 className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-400 group-hover:text-sm group-hover:-translate-y-10 duration-700"
                             >
-                                GitHub
+                                Github
                             </span>
                         </button>
                     </a>
                 </section>
 
-                <a className='p-4 font-mono text-xl text-white hover:text-sky-600 transition-all duration-100 sm:p-8 sm:text-2xl' href='mailto:salub-xd@gmail.com' target='_blank' rel="noreferrer">salub-xd@gmail.com</a>
-                
+                <a className='p-4 font-mono text-md text-white hover:text-sky-600 transition-all duration-100 sm:p-8 sm:text-2xl' href='mailto:salub-xd@gmail.com' target='_blank' rel="noreferrer">salub-xd@gmail.com</a>
+
                 <div className="tooltip-container">
                     <span className="tooltip-text">
                         <img className=' cursor-pointer w-8 h-8 rounded-full hover:border-4 border-sky-600 transition-all duration-100 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXxSNEyHGcxbVbZGhgN1wfE44boAww04OQqvMsvYDPverdMAa8kykl4Rfq3dqYJh8WN4&usqp=CAU" alt="" />

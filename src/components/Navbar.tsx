@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
             <div
                 className={
                     dropdownMenu
-                        ? "w-56 fixed top-20 right-16 bg-[#1e1e1e30] backdrop-blur-lg shadow-2xl sm:hidden "
+                        ? "z-10 w-56 fixed top-20 right-16 bg-[#1e1e1e30] backdrop-blur-lg shadow-2xl sm:hidden "
                         : "hidden"
                 }
             >

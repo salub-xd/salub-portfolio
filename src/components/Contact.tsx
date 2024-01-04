@@ -2,16 +2,16 @@ import React from 'react'
 
 const Contact: React.FC = () => {
     return (
-        <div className='mx-15 flex flex-wrap justify-around items-center sm:mx-20 md:mx-32'>
-            <div className='flex items-center  flex-wrap'>
+        <div className='flex flex-wrap justify-around items-center '>
+            <div className='flex items-center flex-wrap'>
                 <section className="flex justify-center items-center">
-                    <a href="https://github.com/salub-xd"  target='_blank' rel="noreferrer">
+                    <a href="https://github.com/salub-xd" target='_blank' rel="noreferrer">
                         <button
 
                             className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-900 to-black text-white font-semibold hover:translate-y-3 hover:rounded-full transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
                         >
                             <svg
-                                className="w-5"
+                                className="w-4 sm:w-7"
                                 viewBox="0 0 15 15"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -32,13 +32,16 @@ const Contact: React.FC = () => {
                     </a>
                 </section>
 
-                <a className='p-4 font-mono text-md text-white hover:text-sky-600 transition-all duration-100 sm:p-8 sm:text-2xl' href='mailto:salub-xd@gmail.com' target='_blank' rel="noreferrer">salub-xd@gmail.com</a>
+                <a className='p-4 font-mono text-sm text-white hover:text-sky-600 transition-all duration-100 sm:p-8 sm:text-2xl' href='mailto:salub-xd@gmail.com' target='_blank' rel="noreferrer">salub-xd@gmail.com</a>
 
                 <div className="tooltip-container">
                     <span className="tooltip-text">
-                        <img className=' cursor-pointer w-8 h-8 rounded-full hover:border-4 border-sky-600 transition-all duration-100 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXxSNEyHGcxbVbZGhgN1wfE44boAww04OQqvMsvYDPverdMAa8kykl4Rfq3dqYJh8WN4&usqp=CAU" alt="" />
+                        <img className=' cursor-pointer w-7 h-7 rounded-full hover:border-4 border-sky-600 transition-all duration-100 sm:w-10 sm:h-10 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXxSNEyHGcxbVbZGhgN1wfE44boAww04OQqvMsvYDPverdMAa8kykl4Rfq3dqYJh8WN4&usqp=CAU" alt="" />
                     </span>
-                    <span className="tooltip group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-900 to-black text-white font-semibold hover:translate-y-3 hover:rounded-full transition-all duration-500 hover:from-[#070206] hover:to-[#17080d]">@Salub</span>
+                    <span className="tooltip-contact group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-900 to-black text-white font-semibold hover:translate-y-3 hover:rounded-full transition-all duration-500 hover:from-[#070206] hover:to-[#17080d]">
+                        <span className='text-xs flex items-center text-center py-1.5 select-none font-thin'>@</span>
+                        salub
+                    </span>
                 </div>
             </div>
         </div >

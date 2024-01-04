@@ -49,7 +49,7 @@ const Profile: React.FC = () => {
     }, []);
 
     return (
-        <div id="home" className="mx-5 pt-28 flex flex-col-reverse justify-between items-center sm:mx-20 md:mx-32 lg:flex-row lg:pt-40 ">
+        <div id="home" className="flex flex-col-reverse justify-between items-center lg:px-2 lg:flex-row pt-28 lg:pt-40 ">
             <div className="profile pb-0 py-16 lg:py-5">
                 <h1 className="text-3xl text-white text-center font-Ubuntu capitalize sm:text-left sm:text-5xl">hello i'm Salub</h1>
                 <p className="text-white px-0.5 text-center font-Roboto text-xl sm:text-left sm:text-3xl" aria-label="I'm a developer">
@@ -94,7 +94,7 @@ const Profile: React.FC = () => {
                         }
                         <div className="px-0 md:px-4">
                             <h2 className="text-white text-lg font-mono md:text-xl xl:text-2xl">
-                                @{data?.discord_user.username}
+                                <span className="select-none font-thin text-xl ">@</span>{data?.discord_user.username}
                             </h2>
                             {data?.discord_status === "offline" ? (<>
                                 <p className=" text-gray-300 pt-0.5 text-md font-mono md:pt-2 md:text-xl">

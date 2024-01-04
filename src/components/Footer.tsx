@@ -3,7 +3,7 @@ import React from 'react'
 const Footer:React.FC = () => {
   return (
     <div >
-      <p className='p-8 text-center font-mono text-lg text-white sm:text-2xl'>Coded with ❤️ by Salub</p>
+      <p className='py-8 text-center font-Pixelify text-md text-white min-[400px]:text-lg sm:text-2xl sm:font-semibold'>Coded with ❤️ by Salub</p>
     </div>
   )
 }

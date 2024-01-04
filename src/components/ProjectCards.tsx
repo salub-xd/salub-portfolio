@@ -6,7 +6,7 @@ import linkImg from '../assets/link.svg'
 const ProjectCards: React.FC = () => {
 
   return (
-    <div className='mx-10 flex flex-wrap justify-around items-center sm:mx-20 md:mx-32'>
+    <div className='flex flex-wrap justify-around items-center '>
       {Projects.map((val) => (
         <div className='p-8 my-5 mx-5 h-min shadow-2xl hover:shadow-lg rounded-md flex flex-col items-center'>
           <div className='py-3'>

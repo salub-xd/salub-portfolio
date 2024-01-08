@@ -139,7 +139,7 @@ const Profile: React.FC = () => {
             </div>
             <div className="">
                 <img
-                    className="w-64 rounded-xl hover:translate-x-3 hover:translate-y-2 delay-100 transition-all duration-500 md:w-72 xl:w-80 "
+                    className="w-64 rounded-xl scale-110 animate-animation-bounce md:w-72 xl:w-80 "
                     src={batImg}
                     alt=""
                 />

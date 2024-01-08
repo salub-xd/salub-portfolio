@@ -4,7 +4,6 @@ import StuckTooltip from './StuckTooltip';
 import linkImg from '../assets/link.svg'
 
 const ProjectCards: React.FC = () => {
-
   return (
     <div className='flex flex-wrap justify-around items-center '>
       {Projects.map((val) => (
@@ -18,12 +17,9 @@ const ProjectCards: React.FC = () => {
               <div className='flex justify-end items-center sm:py-0'>
                 {val.githubLink &&
                   <a href={val.githubLink} target='_blank' rel="noreferrer"><img className='w-6 h-6 mx-1 rounded-full hover:border-4 border-sky-600 transition-all duration-100 md:w-8 md:h-8 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDTKV4IUyFOpFh5_we4BJxAbFl9GaHYL5SRLfovXmuG0DpGXUPglO6d7CQwCE0X4tDRA&usqp=CAU" alt="" /></a>
-                  // <StuckTooltip hrefLink={val.githubLink} imageUrl={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDTKV4IUyFOpFh5_we4BJxAbFl9GaHYL5SRLfovXmuG0DpGXUPglO6d7CQwCE0X4tDRA&usqp=CAU'} />
-
                 }
                 {val.siteLink &&
                   <StuckTooltip hrefLink={val.siteLink} imageUrl={linkImg} />
-                  //   <a href={val.siteLink} target='_blank' rel="noreferrer"><img className='w-6 h-6 to-white rounded-lg hover:border-4 border-sky-600 transition-all duration-100 md:w-8 md:h-8 ' src={linkImg} alt="" /></a>
                 }
               </div>
             </div>

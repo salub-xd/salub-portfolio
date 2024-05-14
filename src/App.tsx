@@ -1,4 +1,6 @@
 import "./App.css";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion"
+
 import Navbar from "./components/Navbar";
 import Hr from "./components/Hr";
 import Profile from "./components/Profile";
@@ -12,6 +14,10 @@ import Container from "./components/Container";
 function App() {
 
   const [changeColor, setChangeColor] = useState<Boolean>(true);
+  const { scrollYProgress } = useScroll()
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    console.log("Page scroll: ", latest)
+  });
 
   return (
     <>
@@ -20,6 +26,10 @@ function App() {
           <img className="rounded-full text-white fill-white bg-white w-7 sm:w-10"
             src='https://www.svgrepo.com/show/361086/color-mode.svg' alt="" />
         </p>
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
+        />
         <Navbar />
         <Container>
           <Profile />

@@ -43,7 +43,7 @@ const Profile: React.FC = () => {
             .then((res) => {
                 setData(res.data);
                 setLoading(false);
-                console.log(res.data);
+                // console.log(res.data);
             });
         // eslint-disable-next-line
     }, []);
@@ -107,48 +107,23 @@ const Profile: React.FC = () => {
                                 data?.activities && data?.activities?.map((val, i) => (
                                     <>
                                         {data.activities.length > 1 ? <>
-                                            {i === 1 && (
-                                                <>
-                                                    <p
-                                                        key={(val as { name: string }).name}
-                                                        className=" text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl"
-                                                    >
-                                                        Playing {(val as { name: string }).name ? (val as { name: string }).name : 'online'}
-                                                    </p>
-                                                    <p
-                                                        key={(val as { details: string }).details}
-                                                        className=" text-gray-300 text-xs font-serif md:text-lg xl:text-2xl"
-                                                    >
-                                                        {(val as { details: string }).details}
-                                                    </p>
-                                                    <p
-                                                        key={(val as { state: string }).state}
-                                                        className=" text-gray-300 text-xs font-serif md:text-lg xl:text-lg"
-                                                    >
-                                                        {(val as { state: string }).state ? (val as { details: string }).details : currTime && currTime + ` (online)`}
-                                                    </p>
-                                                </>
+                                            <p
+                                                key={(val as { name: string }).name}
+                                                className=" text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl"
+                                            >
+                                                Playing {(val as { name: string }).name ? (val as { name: string }).name : 'online'}
+                                            </p>
+                                            <p
+                                                key={(val as { details: string }).details}
+                                                className=" text-gray-300 text-xs font-serif md:text-lg xl:text-2xl"
+                                            >
+                                                {(val as { details: string }).details}
+                                            </p>
 
-                                            )}
                                         </>
 
-                                            : <>
-                                                {i === 0 && (
-                                                    <>
-                                                        <p
-                                                            className=" text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl">
-                                                            online
-                                                        </p>
-                                                        <p
-                                                            className=" text-gray-300 text-xs font-serif md:text-lg ">
-                                                            {currTime && currTime}
-                                                        </p>
-                                                    </>
-
-                                                )}
-                                            </>
-                                        }
-                                        {/* {i === 1 ? (
+                                            : ''}
+                                        {i === 1 ? (
                                             <p
                                                 key={(val as { name: string }).name}
                                                 className=" text-gray-200 pt-1 text-xs font-serif md:text-lg xl:text-2xl"
@@ -181,7 +156,7 @@ const Profile: React.FC = () => {
                                                 className=" text-gray-300 text-xs font-serif md:text-lg xl:text-lg">
                                                 {currTime && currTime}
                                             </p>
-                                        } */}
+                                        }
                                     </>
                                 ))
                             )}

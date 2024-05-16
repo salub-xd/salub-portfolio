@@ -11,6 +11,7 @@ import react from '../assets/react.svg';
 import tailwindcss from '../assets/tailwindcss.svg';
 import typescript from '../assets/typescript.svg';
 // Project Cards images
+import twitterClone from '../assets/twitter-clone.png';
 import portfolio from '../assets/portfolio.png';
 import redditClone from '../assets/redditClone1.png';
 import reactNote from '../assets/reactNote-app.png';
@@ -82,6 +83,12 @@ export const Skills: Skill[] = [
 // Project Cards Values (info)
 
 export const Projects: Project[] = [
+    {
+        name: 'Twitter Clone',
+        description: "I made this project using (Nextjs, Postgresql(prisma) with Graphql and Node.js) stack.",
+        img: twitterClone,
+        githubLink: "https://github.com/salub-xd/twitter-clone",
+    },
     {
         name: 'Portfolio',
         description: "This is my first portfolio.I created this using react",
